@@ -1,0 +1,21 @@
+{
+  "name": "graphql-playground",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/mw0x/graphql-playground.git",
+  "author": "Marc <marc@atomicode.de>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/App.js",
+    "watch": "nodemon ./src/App.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "mongoose": "^5.0.15"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
