@@ -1,6 +1,7 @@
 
 
 var express = require('express');
+var cors = require('cors');
 
 var mongoose = require('mongoose');
 
@@ -11,6 +12,8 @@ module.exports = function server(mongoUri, schema, rootValue, graphiql, port) {
   var app = express();
 
   mongoose.connect(mongoUri);
+
+  app.use(cors());
 
   app.use('/graphql', graphqlHTTP({
     schema,
